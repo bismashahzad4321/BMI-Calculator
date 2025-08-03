@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class=" flex justify-center items-center min-h-screen bg-gray-100">
+    <div class="calculator flex-col gap-[40px] p-[20px] bg-white rounded-[5%] shadow-xl">
+        <h1 class="text-blue-900 font-bold sm:text-[16px] xl:text-[30px] md:text-[30px]">Calculate your Body Mass Index
+        </h1>
+        <div class="flex flex-col gap-2">
+            <label class="font-semibold text-[18px]">Weight</label>
+            <input type="text" placeholder="Enter Your Weight" class="weight border p-2 rounded">
+
+            <select class="border p-2 rounded">
+                <option value="">KG</option>
+            </select>
+
+        </div>
+        <div class="flex flex-col gap-2">
+            <label class="font-semibold text-[18px]">Height</label>
+            <input type="text" placeholder="Enter Your Height" class="height border p-2 rounded">
+            <select class="border p-2 rounded">
+                <option value="">CM</option>
+            </select>
+        </div>
+        <div class="flex flex-col gap-2 bg-blue-900 text-white  mt-[20px] p-[10px] rounded text-[20px]">
+            <button class="btn">Submit</button>
+        </div>
+        <div class="showResult"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
