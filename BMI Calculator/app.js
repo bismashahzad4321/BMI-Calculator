@@ -31,7 +31,7 @@ btn.addEventListener("click", () => {
         para.innerText = `Your BMI is ${roundedBMI} which is Normal`;
         para.style.background = "green"
         para.style.padding = "17px"
-        para.style.color = "black"
+        para.style.color = "white"
     }
     else if (roundedBMI >= 25 && roundedBMI <= 29.9) {
         para.innerText = `Your BMI is ${roundedBMI} and you are overweight`;
@@ -48,5 +48,5 @@ btn.addEventListener("click", () => {
     showResult.appendChild(para);
     height.value = "";
     weight.value = "";
-    
+
 })
